@@ -7,7 +7,7 @@ export default function Page() {
   const [csvUrl, setCsvUrl] = useState('')
   const [players, setPlayers] = useState<any[]>([])
   const [loading, setLoading] = useState(false)
-  const [lastUpdated, setLastUpdated] = useState(null)
+  const [lastUpdated, setLastUpdated] = useState<Date | null>(null)
   const [fullscreen, setFullscreen] = useState(false)
 
   // IMPORTANT:
