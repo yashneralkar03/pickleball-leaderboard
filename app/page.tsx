@@ -107,7 +107,7 @@ export default function Page() {
 }: {
   title: string
   players: any[]
-}) { {
+}) { 
     return (
       <div className="bg-zinc-900 rounded-3xl p-6 border border-zinc-800 shadow-2xl">
         <div className="flex items-center justify-between mb-6">
