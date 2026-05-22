@@ -29,7 +29,9 @@ export default function Page() {
     try {
       setLoading(true)
 
-      const response = await fetch(csvUrl)
+      const response = await fetch(
+  `${csvUrl}&t=${new Date().getTime()}`
+)
       const text = await response.text()
 
       const rows = text
