@@ -5,7 +5,15 @@ import { Trophy, Users, TrendingUp, Monitor, Smartphone, RefreshCw } from 'lucid
 
 export default function Page() {
   const [csvUrl, setCsvUrl] = useState('')
-  const [players, setPlayers] = useState<any[]>([])
+  const [players, setPlayers] = useState<
+  {
+    playerId: string
+    playerName: string
+    gender: string
+    gamesPlayed: number
+    totalPoints: number
+  }[]
+>([])
   const [loading, setLoading] = useState(false)
   const [lastUpdated, setLastUpdated] = useState(null)
   const [fullscreen, setFullscreen] = useState(false)
